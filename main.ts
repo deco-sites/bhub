@@ -9,11 +9,15 @@ import twindPlugin from "$fresh/plugins/twind.ts";
 import twindConfig from "./twind.config.ts";
 import prefetchPlugin from "prefetch";
 import partytownPlugin from "partytown/mod.ts";
+import stylesPlugin from "$live/plugins/styles.ts";
 
 await start(manifest, {
   plugins: [
     prefetchPlugin(),
     partytownPlugin(),
+    stylesPlugin(
+      "html{height: 100%;scroll-behavior:smooth;} body{height:100%}"
+    ),
     twindPlugin({
       selfURL: new URL("./twind.config.ts", import.meta.url).href,
       ...twindConfig,

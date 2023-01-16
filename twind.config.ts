@@ -1,24 +1,30 @@
-/** @type {import('$fresh/plugins/twind').Options} */
-export default {
+import type { Options } from "$fresh/plugins/twind.ts";
+
+const options: Omit<Options, "selfURL"> = {
+  plugins: {
+    "scroll-smoth": { "scroll-behavior": "smooth" },
+    "scroll-snap-x": { "scroll-snap-type": "x mandatory" },
+    "snap-center": { "scroll-snap-align": "center" },
+    "aspect-16/10": { "aspect-ratio": "16 / 10" },
+  },
   theme: {
     extend: {
+      maxWidth: {
+        "1/2": "50%",
+      },
       screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1536px",
+        tablet: "768px",
+        desktop: "992px",
       },
       colors: {
-        primary: "#2FD180",
-        "primary-dark": "#003232",
-        "primary-light": "#C5FFE9",
-        transparent: "transparent",
+        primary: "#3763ff",
       },
       fontFamily: {
-        sans: ["Albert Sans", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
         serif: ["serif"],
       },
     },
   },
 };
+
+export default options;
