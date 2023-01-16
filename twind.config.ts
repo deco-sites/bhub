@@ -9,19 +9,17 @@ const options: Omit<Options, "selfURL"> = {
   },
   theme: {
     extend: {
-      maxWidth: {
-        "1/2": "50%",
-      },
-      screens: {
-        tablet: "768px",
-        desktop: "992px",
-      },
       colors: {
         primary: "#3763ff",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
         serif: ["serif"],
+      },
+      screens: {
+        sm: "768px",
+        md: "992px",
+        lg: "1200px",
       },
     },
   },

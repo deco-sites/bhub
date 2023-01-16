@@ -18,7 +18,7 @@ export default function NavBarItem({ label, link, items }: Props) {
     <div class="relative cursor-pointer">
       <div
         type="button"
-        class="text-[#232323] group inline-flex items-center rounded-md text-base font-medium hover:text-gray-900 focus:outline-none"
+        class="text-[#232323] group inline-flex items-center rounded-md text-xs lg:text-base font-medium hover:text-gray-900 focus:outline-none"
         aria-expanded="false"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}>
@@ -65,7 +65,7 @@ export default function NavBarItem({ label, link, items }: Props) {
     <span className="relative group">
       <a
         href={link}
-        class="text-base font-medium text-[#232323] hover:text-gray-900">
+        class="text-xs lg:text-base font-medium text-[#232323] hover:text-gray-900">
         {label}
       </a>
       <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all group-hover:w-full duration-500"></span>
