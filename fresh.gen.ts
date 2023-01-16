@@ -11,9 +11,10 @@ import * as $3 from "./routes/index.tsx";
 import * as $$0 from "./islands/LiveControls.tsx";
 import * as $$1 from "./islands/NavBarItem.tsx";
 import * as $$2 from "./islands/Navbar.tsx";
-import * as $$$0 from "./sections/Head.tsx";
-import * as $$$1 from "./sections/Header.tsx";
-import * as $$$2 from "./sections/Markdown.tsx";
+import * as $$$0 from "./sections/Banner.tsx";
+import * as $$$1 from "./sections/Head.tsx";
+import * as $$$2 from "./sections/Header.tsx";
+import * as $$$3 from "./sections/Markdown.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -29,12 +30,17 @@ const manifest: DecoManifest = {
     "./islands/Navbar.tsx": $$2,
   },
   sections: {
-    "./sections/Head.tsx": $$$0,
-    "./sections/Header.tsx": $$$1,
-    "./sections/Markdown.tsx": $$$2,
+    "./sections/Banner.tsx": $$$0,
+    "./sections/Head.tsx": $$$1,
+    "./sections/Header.tsx": $$$2,
+    "./sections/Markdown.tsx": $$$3,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
+    "./sections/Banner.tsx": {
+      "inputSchema": null,
+      "outputSchema": null,
+    },
     "./sections/Head.tsx": {
       "inputSchema": {
         "title": " Head",

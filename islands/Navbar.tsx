@@ -1,5 +1,5 @@
 import { useState } from "preact/hooks";
-import { Logo, TopBar } from "../components/index.ts";
+import { Logo } from "../components/index.ts";
 import { menu } from "../data/menu.ts";
 import NavBarItem from "../islands/NavBarItem.tsx";
 
@@ -8,9 +8,7 @@ export default function Navbar() {
 
   return (
     <>
-      <TopBar />
-
-      <div class="relative bg-white shadow-lg">
+      <div class="h-0 lg:h-auto lg:relative bg-white shadow-lg">
         <div class="mx-auto max-w-6xl px-3 lg:px-2 shadow-lg lg:shadow-none">
           <div class="flex items-center justify-between py-3 lg:py-5">
             <div class="flex justify-start">
