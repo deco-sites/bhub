@@ -9,7 +9,8 @@ import * as $1 from "./routes/_app.tsx";
 import * as $2 from "./routes/_middleware.ts";
 import * as $3 from "./routes/index.tsx";
 import * as $$0 from "./islands/LiveControls.tsx";
-import * as $$1 from "./islands/Navbar.tsx";
+import * as $$1 from "./islands/NavBarItem.tsx";
+import * as $$2 from "./islands/Navbar.tsx";
 import * as $$$0 from "./sections/Head.tsx";
 import * as $$$1 from "./sections/Header.tsx";
 import * as $$$2 from "./sections/Markdown.tsx";
@@ -22,7 +23,11 @@ const manifest: DecoManifest = {
     "./routes/_middleware.ts": $2,
     "./routes/index.tsx": $3,
   },
-  islands: { "./islands/LiveControls.tsx": $$0, "./islands/Navbar.tsx": $$1 },
+  islands: {
+    "./islands/LiveControls.tsx": $$0,
+    "./islands/NavBarItem.tsx": $$1,
+    "./islands/Navbar.tsx": $$2,
+  },
   sections: {
     "./sections/Head.tsx": $$$0,
     "./sections/Header.tsx": $$$1,
