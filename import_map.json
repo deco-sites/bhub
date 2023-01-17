@@ -18,6 +18,8 @@
 
     "std/": "https://deno.land/std@0.162.0/",
 
-    "prefetch": "https://deno.land/x/prefetch@0.0.6/mod.ts"
+    "prefetch": "https://deno.land/x/prefetch@0.0.6/mod.ts",
+    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.0.1?pin=v99",
+    "@preact/signals": "https://esm.sh/*@preact/signals@1.0.3?pin=v99"
   }
 }

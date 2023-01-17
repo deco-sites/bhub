@@ -1,6 +1,6 @@
 export default function Banner() {
   return (
-    <div className="pt-28">
+    <div className="pt-28 pb-16">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row justify-center items-center">
           <div className="flex flex-col justify-center lg:justify-start items-center lg:w-1/2 px-4 lg:pl-3 lg:pr-12">

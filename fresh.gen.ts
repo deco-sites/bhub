@@ -8,13 +8,15 @@ import * as $0 from "./routes/[...catchall].tsx";
 import * as $1 from "./routes/_app.tsx";
 import * as $2 from "./routes/_middleware.ts";
 import * as $3 from "./routes/index.tsx";
-import * as $$0 from "./islands/LiveControls.tsx";
-import * as $$1 from "./islands/NavBarItem.tsx";
-import * as $$2 from "./islands/Navbar.tsx";
+import * as $$0 from "./islands/CarouselBrands.tsx";
+import * as $$1 from "./islands/LiveControls.tsx";
+import * as $$2 from "./islands/NavBarItem.tsx";
+import * as $$3 from "./islands/Navbar.tsx";
 import * as $$$0 from "./sections/Banner.tsx";
-import * as $$$1 from "./sections/Head.tsx";
-import * as $$$2 from "./sections/Header.tsx";
-import * as $$$3 from "./sections/Markdown.tsx";
+import * as $$$1 from "./sections/CarouselBrandsSection.tsx";
+import * as $$$2 from "./sections/Head.tsx";
+import * as $$$3 from "./sections/Header.tsx";
+import * as $$$4 from "./sections/Markdown.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -25,19 +27,25 @@ const manifest: DecoManifest = {
     "./routes/index.tsx": $3,
   },
   islands: {
-    "./islands/LiveControls.tsx": $$0,
-    "./islands/NavBarItem.tsx": $$1,
-    "./islands/Navbar.tsx": $$2,
+    "./islands/CarouselBrands.tsx": $$0,
+    "./islands/LiveControls.tsx": $$1,
+    "./islands/NavBarItem.tsx": $$2,
+    "./islands/Navbar.tsx": $$3,
   },
   sections: {
     "./sections/Banner.tsx": $$$0,
-    "./sections/Head.tsx": $$$1,
-    "./sections/Header.tsx": $$$2,
-    "./sections/Markdown.tsx": $$$3,
+    "./sections/CarouselBrandsSection.tsx": $$$1,
+    "./sections/Head.tsx": $$$2,
+    "./sections/Header.tsx": $$$3,
+    "./sections/Markdown.tsx": $$$4,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
     "./sections/Banner.tsx": {
+      "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/CarouselBrandsSection.tsx": {
       "inputSchema": null,
       "outputSchema": null,
     },
