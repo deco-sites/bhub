@@ -12,11 +12,13 @@ import * as $$0 from "./islands/CarouselBrands.tsx";
 import * as $$1 from "./islands/LiveControls.tsx";
 import * as $$2 from "./islands/NavBarItem.tsx";
 import * as $$3 from "./islands/Navbar.tsx";
+import * as $$4 from "./islands/Problems.tsx";
 import * as $$$0 from "./sections/Banner.tsx";
 import * as $$$1 from "./sections/CarouselBrandsSection.tsx";
 import * as $$$2 from "./sections/Head.tsx";
 import * as $$$3 from "./sections/Header.tsx";
 import * as $$$4 from "./sections/Markdown.tsx";
+import * as $$$5 from "./sections/ProblemSection.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -31,6 +33,7 @@ const manifest: DecoManifest = {
     "./islands/LiveControls.tsx": $$1,
     "./islands/NavBarItem.tsx": $$2,
     "./islands/Navbar.tsx": $$3,
+    "./islands/Problems.tsx": $$4,
   },
   sections: {
     "./sections/Banner.tsx": $$$0,
@@ -38,6 +41,7 @@ const manifest: DecoManifest = {
     "./sections/Head.tsx": $$$2,
     "./sections/Header.tsx": $$$3,
     "./sections/Markdown.tsx": $$$4,
+    "./sections/ProblemSection.tsx": $$$5,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -117,6 +121,67 @@ const manifest: DecoManifest = {
         "required": [
           "text",
         ],
+      },
+      "outputSchema": null,
+    },
+    "./sections/ProblemSection.tsx": {
+      "inputSchema": {
+        "title": " Problem Section",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": [
+              "string",
+              "null",
+            ],
+            "title": "Title",
+          },
+          "listProblems": {
+            "type": "array",
+            "items": {
+              "title": "Problem",
+              "type": "object",
+              "properties": {
+                "src": {
+                  "format": "image-uri",
+                  "type": "string",
+                  "title": "Src",
+                },
+                "alt": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Alt",
+                },
+                "href": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Href",
+                },
+                "title": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Title",
+                },
+                "description": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Description",
+                },
+              },
+              "required": [],
+            },
+            "title": "List Problems",
+          },
+        },
+        "required": [],
       },
       "outputSchema": null,
     },
