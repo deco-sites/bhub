@@ -13,12 +13,14 @@ import * as $$1 from "./islands/LiveControls.tsx";
 import * as $$2 from "./islands/NavBarItem.tsx";
 import * as $$3 from "./islands/Navbar.tsx";
 import * as $$4 from "./islands/Problems.tsx";
+import * as $$5 from "./islands/Works.tsx";
 import * as $$$0 from "./sections/Banner.tsx";
 import * as $$$1 from "./sections/CarouselBrandsSection.tsx";
 import * as $$$2 from "./sections/Head.tsx";
 import * as $$$3 from "./sections/Header.tsx";
 import * as $$$4 from "./sections/Markdown.tsx";
 import * as $$$5 from "./sections/ProblemSection.tsx";
+import * as $$$6 from "./sections/WorksSection.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -34,6 +36,7 @@ const manifest: DecoManifest = {
     "./islands/NavBarItem.tsx": $$2,
     "./islands/Navbar.tsx": $$3,
     "./islands/Problems.tsx": $$4,
+    "./islands/Works.tsx": $$5,
   },
   sections: {
     "./sections/Banner.tsx": $$$0,
@@ -42,6 +45,7 @@ const manifest: DecoManifest = {
     "./sections/Header.tsx": $$$3,
     "./sections/Markdown.tsx": $$$4,
     "./sections/ProblemSection.tsx": $$$5,
+    "./sections/WorksSection.tsx": $$$6,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -179,6 +183,53 @@ const manifest: DecoManifest = {
               "required": [],
             },
             "title": "List Problems",
+          },
+        },
+        "required": [],
+      },
+      "outputSchema": null,
+    },
+    "./sections/WorksSection.tsx": {
+      "inputSchema": {
+        "title": " Works Section",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": [
+              "string",
+              "null",
+            ],
+            "title": "Title",
+          },
+          "subtitle": {
+            "type": [
+              "string",
+              "null",
+            ],
+            "title": "Subtitle",
+          },
+          "listWorks": {
+            "type": "array",
+            "items": {
+              "title": "Work",
+              "type": "object",
+              "properties": {
+                "image": {
+                  "format": "image-uri",
+                  "type": "string",
+                  "title": "Image",
+                },
+                "description": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Description",
+                },
+              },
+              "required": [],
+            },
+            "title": "List Works",
           },
         },
         "required": [],
