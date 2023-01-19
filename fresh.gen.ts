@@ -13,14 +13,16 @@ import * as $$1 from "./islands/LiveControls.tsx";
 import * as $$2 from "./islands/NavBarItem.tsx";
 import * as $$3 from "./islands/Navbar.tsx";
 import * as $$4 from "./islands/Problems.tsx";
-import * as $$5 from "./islands/Works.tsx";
+import * as $$5 from "./islands/Solutions.tsx";
+import * as $$6 from "./islands/Works.tsx";
 import * as $$$0 from "./sections/Banner.tsx";
 import * as $$$1 from "./sections/CarouselBrandsSection.tsx";
 import * as $$$2 from "./sections/Head.tsx";
 import * as $$$3 from "./sections/Header.tsx";
 import * as $$$4 from "./sections/Markdown.tsx";
 import * as $$$5 from "./sections/ProblemSection.tsx";
-import * as $$$6 from "./sections/WorksSection.tsx";
+import * as $$$6 from "./sections/SolutionsSection.tsx";
+import * as $$$7 from "./sections/WorksSection.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -36,7 +38,8 @@ const manifest: DecoManifest = {
     "./islands/NavBarItem.tsx": $$2,
     "./islands/Navbar.tsx": $$3,
     "./islands/Problems.tsx": $$4,
-    "./islands/Works.tsx": $$5,
+    "./islands/Solutions.tsx": $$5,
+    "./islands/Works.tsx": $$6,
   },
   sections: {
     "./sections/Banner.tsx": $$$0,
@@ -45,7 +48,8 @@ const manifest: DecoManifest = {
     "./sections/Header.tsx": $$$3,
     "./sections/Markdown.tsx": $$$4,
     "./sections/ProblemSection.tsx": $$$5,
-    "./sections/WorksSection.tsx": $$$6,
+    "./sections/SolutionsSection.tsx": $$$6,
+    "./sections/WorksSection.tsx": $$$7,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -186,6 +190,117 @@ const manifest: DecoManifest = {
           },
         },
         "required": [],
+      },
+      "outputSchema": null,
+    },
+    "./sections/SolutionsSection.tsx": {
+      "inputSchema": {
+        "title": " Solutions Section",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": [
+              "string",
+              "null",
+            ],
+            "title": "Title",
+          },
+          "featuredSolution": {
+            "title": "Featured Solution",
+            "type": "object",
+            "properties": {
+              "image": {
+                "format": "image-uri",
+                "type": "string",
+                "title": "Image",
+              },
+              "alt": {
+                "type": [
+                  "string",
+                  "null",
+                ],
+                "title": "Alt",
+              },
+              "title": {
+                "type": "string",
+                "title": "Title",
+              },
+              "description": {
+                "type": "string",
+                "title": "Description",
+              },
+              "btnLabel": {
+                "type": "string",
+                "title": "Btn Label",
+              },
+              "btnLink": {
+                "type": "string",
+                "title": "Btn Link",
+              },
+              "linkLabel": {
+                "type": "string",
+                "title": "Link Label",
+              },
+              "linkHref": {
+                "type": "string",
+                "title": "Link Href",
+              },
+            },
+            "required": [
+              "title",
+              "description",
+              "btnLabel",
+              "btnLink",
+              "linkLabel",
+              "linkHref",
+            ],
+          },
+          "listSolutions": {
+            "type": "array",
+            "items": {
+              "title": "Solution",
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "title": "Title",
+                },
+                "description": {
+                  "type": "string",
+                  "title": "Description",
+                },
+                "btnLabel": {
+                  "type": "string",
+                  "title": "Btn Label",
+                },
+                "btnLink": {
+                  "type": "string",
+                  "title": "Btn Link",
+                },
+                "linkLabel": {
+                  "type": "string",
+                  "title": "Link Label",
+                },
+                "linkHref": {
+                  "type": "string",
+                  "title": "Link Href",
+                },
+              },
+              "required": [
+                "title",
+                "description",
+                "btnLabel",
+                "btnLink",
+                "linkLabel",
+                "linkHref",
+              ],
+            },
+            "title": "List Solutions",
+          },
+        },
+        "required": [
+          "featuredSolution",
+        ],
       },
       "outputSchema": null,
     },
