@@ -1,5 +1,5 @@
-import { Problem } from "../components/ProblemItem.tsx";
-import Problems from "../islands/Problems.tsx";
+import { Problems } from "../components/index.ts";
+import type { Problem } from "../components/ProblemItem.tsx";
 
 export interface Props {
   title?: string;

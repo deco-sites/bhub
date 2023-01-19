@@ -1,6 +1,17 @@
-import { IFeaturedSolution } from "../sections/SolutionsSection.tsx";
+import type { Image as LiveImage } from "$live/std/ui/types/Image.ts";
 
-export default function FeaturedSolution({
+export interface ISolutionFeatured {
+  image?: LiveImage;
+  alt?: string;
+  title: string;
+  description: string;
+  btnLabel: string;
+  btnLink: string;
+  linkLabel: string;
+  linkHref: string;
+}
+
+export default function SolutionFeatured({
   image,
   alt,
   title,
@@ -9,7 +20,7 @@ export default function FeaturedSolution({
   btnLink,
   linkLabel,
   linkHref,
-}: IFeaturedSolution) {
+}: ISolutionFeatured) {
   return (
     <div className="w-full grid sm:grid-cols-2 rounded-3xl bg-white mb-10">
       <figure className="h-full w-full flex-shrink">

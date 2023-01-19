@@ -1,5 +1,13 @@
 import SolutionItem from "../components/SolutionItem.tsx";
-import { Solution } from "../sections/SolutionsSection.tsx";
+
+export interface Solution {
+  title: string;
+  description: string;
+  btnLabel: string;
+  btnLink: string;
+  linkLabel: string;
+  linkHref: string;
+}
 
 interface Solutions {
   listSolutions: Solution[];

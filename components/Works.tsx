@@ -1,4 +1,5 @@
-import WorkItem, { Work } from "../components/WorkItem.tsx";
+import { WorkItem } from "../components/index.ts";
+import type { Work } from "../components/WorkItem.tsx";
 
 interface Works {
   listWorks?: Work[];

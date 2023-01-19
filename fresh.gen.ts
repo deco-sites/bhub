@@ -12,9 +12,6 @@ import * as $$0 from "./islands/CarouselBrands.tsx";
 import * as $$1 from "./islands/LiveControls.tsx";
 import * as $$2 from "./islands/NavBarItem.tsx";
 import * as $$3 from "./islands/Navbar.tsx";
-import * as $$4 from "./islands/Problems.tsx";
-import * as $$5 from "./islands/Solutions.tsx";
-import * as $$6 from "./islands/Works.tsx";
 import * as $$$0 from "./sections/Banner.tsx";
 import * as $$$1 from "./sections/CarouselBrandsSection.tsx";
 import * as $$$2 from "./sections/Head.tsx";
@@ -37,9 +34,6 @@ const manifest: DecoManifest = {
     "./islands/LiveControls.tsx": $$1,
     "./islands/NavBarItem.tsx": $$2,
     "./islands/Navbar.tsx": $$3,
-    "./islands/Problems.tsx": $$4,
-    "./islands/Solutions.tsx": $$5,
-    "./islands/Works.tsx": $$6,
   },
   sections: {
     "./sections/Banner.tsx": $$$0,
@@ -205,8 +199,8 @@ const manifest: DecoManifest = {
             ],
             "title": "Title",
           },
-          "featuredSolution": {
-            "title": "Featured Solution",
+          "solutionFeatured": {
+            "title": "Solution Featured",
             "type": "object",
             "properties": {
               "image": {
@@ -299,7 +293,7 @@ const manifest: DecoManifest = {
           },
         },
         "required": [
-          "featuredSolution",
+          "solutionFeatured",
         ],
       },
       "outputSchema": null,

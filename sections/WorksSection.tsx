@@ -1,5 +1,5 @@
-import { Work } from "../components/WorkItem.tsx";
-import Works from "../islands/Works.tsx";
+import { Works } from "../components/index.ts";
+import type { Work } from "../components/WorkItem.tsx";
 
 export interface Props {
   title?: string;

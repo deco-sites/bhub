@@ -1,4 +1,5 @@
-import ProblemItem, { Problem } from "../components/ProblemItem.tsx";
+import { ProblemItem } from "../components/index.ts";
+import type { Problem } from "../components/ProblemItem.tsx";
 
 interface Problems {
   listProblems: Problem[];
