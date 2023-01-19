@@ -11,3 +11,4 @@ export { default as TeamMemberGroup } from "./TeamMemberGroup.tsx";
 export { default as TopBar } from "./TopBar.tsx";
 export { default as WorkItem } from "./WorkItem.tsx";
 export { default as Works } from "./Works.tsx";
+export { default as InputEmail } from "./InputEmail.tsx";

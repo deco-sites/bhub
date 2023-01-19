@@ -1,3 +1,5 @@
+import { InputEmail } from "../components/index.ts";
+
 export default function Banner() {
   return (
     <div className="pt-28 pb-16">
@@ -12,16 +14,7 @@ export default function Banner() {
               Tenha mais tempo e recurso para focar no crescimento da sua
               empresa, enquanto a BHub cuida do dia a dia do seu negócio
             </p>
-            <input
-              type="text"
-              placeholder="Seu e-mail profissional"
-              className="h-9 px-3 rounded-lg border-1 border-gray-500 self-start mb-5 w-full"
-            />
-            <a
-              href="#"
-              class="self-start inline-flex items-center justify-center whitespace-nowrap rounded-[10px] border border-transparent bg-primary px-3 py-2 text-base font-bold text-white shadow-sm w-full lg:w-auto">
-              Falar com especialista
-            </a>
+            <InputEmail />
           </div>
           <div className="flex justify-center items-center lg:w-1/2 relative mt-16 lg:mt-0">
             <img

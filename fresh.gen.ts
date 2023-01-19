@@ -14,12 +14,13 @@ import * as $$2 from "./islands/NavBarItem.tsx";
 import * as $$3 from "./islands/Navbar.tsx";
 import * as $$$0 from "./sections/Banner.tsx";
 import * as $$$1 from "./sections/CarouselBrandsSection.tsx";
-import * as $$$2 from "./sections/Head.tsx";
-import * as $$$3 from "./sections/Header.tsx";
-import * as $$$4 from "./sections/Markdown.tsx";
-import * as $$$5 from "./sections/ProblemSection.tsx";
-import * as $$$6 from "./sections/SolutionsSection.tsx";
-import * as $$$7 from "./sections/WorksSection.tsx";
+import * as $$$2 from "./sections/FeaturesSection.tsx";
+import * as $$$3 from "./sections/Head.tsx";
+import * as $$$4 from "./sections/Header.tsx";
+import * as $$$5 from "./sections/Markdown.tsx";
+import * as $$$6 from "./sections/ProblemSection.tsx";
+import * as $$$7 from "./sections/SolutionsSection.tsx";
+import * as $$$8 from "./sections/WorksSection.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -38,12 +39,13 @@ const manifest: DecoManifest = {
   sections: {
     "./sections/Banner.tsx": $$$0,
     "./sections/CarouselBrandsSection.tsx": $$$1,
-    "./sections/Head.tsx": $$$2,
-    "./sections/Header.tsx": $$$3,
-    "./sections/Markdown.tsx": $$$4,
-    "./sections/ProblemSection.tsx": $$$5,
-    "./sections/SolutionsSection.tsx": $$$6,
-    "./sections/WorksSection.tsx": $$$7,
+    "./sections/FeaturesSection.tsx": $$$2,
+    "./sections/Head.tsx": $$$3,
+    "./sections/Header.tsx": $$$4,
+    "./sections/Markdown.tsx": $$$5,
+    "./sections/ProblemSection.tsx": $$$6,
+    "./sections/SolutionsSection.tsx": $$$7,
+    "./sections/WorksSection.tsx": $$$8,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -53,6 +55,36 @@ const manifest: DecoManifest = {
     },
     "./sections/CarouselBrandsSection.tsx": {
       "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/FeaturesSection.tsx": {
+      "inputSchema": {
+        "title": " Features Section",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "string",
+            },
+            "title": "Features",
+          },
+          "image": {
+            "format": "image-uri",
+            "type": "string",
+            "title": "Image",
+          },
+        },
+        "required": [
+          "title",
+          "features",
+          "image",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Head.tsx": {
