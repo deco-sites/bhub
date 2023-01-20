@@ -10,7 +10,7 @@ export interface Problem {
 
 export default function ProblemItem({ alt, src, title, description }: Problem) {
   return (
-    <div class={`w-full relative bg-white rounded-3xl flex-shrink-0 `}>
+    <div class={`w-full relative bg-white rounded-3xl flex-shrink-0`}>
       <img
         src={src || "/image-clock.jpg"}
         alt={alt}

@@ -1,5 +1,5 @@
 import { signal } from "@preact/signals";
-import TeamMember from "./TeamMember.tsx";
+import CarouselBrandItem from "./CarouselBrandItem.tsx";
 
 export const slidePage = signal(0);
 export const PAGE_SIZE = 6;
@@ -60,11 +60,11 @@ function isVisible(index: number, page: number) {
   return page <= index && index < page + PAGE_SIZE;
 }
 
-export default function TeamMemberGroup() {
+export default function CarouselBrandsGroup() {
   return (
     <div class="flex gap-5 grid-cols-3">
       {time.map((pessoa, index) => (
-        <TeamMember
+        <CarouselBrandItem
           class={isVisible(index, slidePage.value) ? "" : "lg:hidden"}
           {...pessoa}
         />

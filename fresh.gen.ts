@@ -12,6 +12,7 @@ import * as $$0 from "./islands/CarouselBrands.tsx";
 import * as $$1 from "./islands/LiveControls.tsx";
 import * as $$2 from "./islands/NavBarItem.tsx";
 import * as $$3 from "./islands/Navbar.tsx";
+import * as $$4 from "./islands/Testimonials.tsx";
 import * as $$$0 from "./sections/Banner.tsx";
 import * as $$$1 from "./sections/CarouselBrandsSection.tsx";
 import * as $$$2 from "./sections/FeaturesSection.tsx";
@@ -22,7 +23,8 @@ import * as $$$6 from "./sections/PlansSection.tsx";
 import * as $$$7 from "./sections/ProblemSection.tsx";
 import * as $$$8 from "./sections/SolutionsSection.tsx";
 import * as $$$9 from "./sections/StatsSection.tsx";
-import * as $$$10 from "./sections/WorksSection.tsx";
+import * as $$$10 from "./sections/TestimonialsSection.tsx";
+import * as $$$11 from "./sections/WorksSection.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -37,6 +39,7 @@ const manifest: DecoManifest = {
     "./islands/LiveControls.tsx": $$1,
     "./islands/NavBarItem.tsx": $$2,
     "./islands/Navbar.tsx": $$3,
+    "./islands/Testimonials.tsx": $$4,
   },
   sections: {
     "./sections/Banner.tsx": $$$0,
@@ -49,7 +52,8 @@ const manifest: DecoManifest = {
     "./sections/ProblemSection.tsx": $$$7,
     "./sections/SolutionsSection.tsx": $$$8,
     "./sections/StatsSection.tsx": $$$9,
-    "./sections/WorksSection.tsx": $$$10,
+    "./sections/TestimonialsSection.tsx": $$$10,
+    "./sections/WorksSection.tsx": $$$11,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -455,6 +459,66 @@ const manifest: DecoManifest = {
         "required": [
           "title",
           "stats",
+        ],
+      },
+      "outputSchema": null,
+    },
+    "./sections/TestimonialsSection.tsx": {
+      "inputSchema": {
+        "title": " Testimonials Section",
+        "type": "object",
+        "properties": {
+          "testimonials": {
+            "type": "array",
+            "items": {
+              "title": "Testimony",
+              "type": "object",
+              "properties": {
+                "imgSrc": {
+                  "format": "image-uri",
+                  "type": "string",
+                  "title": "Img Src",
+                },
+                "altText": {
+                  "type": "string",
+                  "title": "Alt Text",
+                },
+                "class": {
+                  "type": "string",
+                  "title": "Class",
+                },
+                "name": {
+                  "type": "string",
+                  "title": "Name",
+                },
+                "lastName": {
+                  "type": "string",
+                  "title": "Last Name",
+                },
+                "testimony": {
+                  "type": "string",
+                  "title": "Testimony",
+                },
+                "linkLabel": {
+                  "type": "string",
+                  "title": "Link Label",
+                },
+              },
+              "required": [
+                "imgSrc",
+                "altText",
+                "class",
+                "name",
+                "lastName",
+                "testimony",
+                "linkLabel",
+              ],
+            },
+            "title": "Testimonials",
+          },
+        },
+        "required": [
+          "testimonials",
         ],
       },
       "outputSchema": null,

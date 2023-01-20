@@ -4,7 +4,7 @@ interface Props {
   class: string;
 }
 
-export default function TeamMember({
+export default function CarouselBrandItem({
   imgSrc,
   altText,
   class: className,

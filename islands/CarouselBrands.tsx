@@ -1,8 +1,8 @@
-import TeamMemberGroup, {
+import CarouselBrandsGroup, {
   PAGE_SIZE,
   setSlidePage,
   time,
-} from "../components/TeamMemberGroup.tsx";
+} from "../components/CarouselBrandsGroup.tsx";
 
 import { useSignal } from "@preact/signals";
 import SlidePickerControls from "../components/SlidePickerControls.tsx";
@@ -13,7 +13,7 @@ export default function CarouselBrands() {
   return (
     <>
       <div class="flex justify-center overflow-auto lg:overflow-visible pb-5 lg:pb-0">
-        <TeamMemberGroup />
+        <CarouselBrandsGroup />
       </div>
       <div id="dots" class="justify-center py-6 hidden lg:flex">
         {Array.from({ length: Math.ceil(time.length / PAGE_SIZE) }).map(

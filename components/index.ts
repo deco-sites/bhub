@@ -1,3 +1,5 @@
+export { default as CarouselBrandItem } from "./CarouselBrandItem.tsx";
+export { default as CarouselBrandsGroup } from "./CarouselBrandsGroup.tsx";
 export { default as InputEmail } from "./InputEmail.tsx";
 export { default as Layout } from "./Layout.tsx";
 export { default as Logo } from "./Logo.tsx";
@@ -11,8 +13,7 @@ export { default as SolutionItem } from "./SolutionItem.tsx";
 export { default as Solutions } from "./Solutions.tsx";
 export { default as Stats } from "./Stats.tsx";
 export { default as StatsItem } from "./StatsItem.tsx";
-export { default as TeamMember } from "./TeamMember.tsx";
-export { default as TeamMemberGroup } from "./TeamMemberGroup.tsx";
+export { default as Testimony } from "./Testimony.tsx";
 export { default as TopBar } from "./TopBar.tsx";
 export { default as WorkItem } from "./WorkItem.tsx";
 export { default as Works } from "./Works.tsx";
