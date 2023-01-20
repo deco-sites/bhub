@@ -20,7 +20,8 @@ import * as $$$4 from "./sections/Header.tsx";
 import * as $$$5 from "./sections/Markdown.tsx";
 import * as $$$6 from "./sections/ProblemSection.tsx";
 import * as $$$7 from "./sections/SolutionsSection.tsx";
-import * as $$$8 from "./sections/WorksSection.tsx";
+import * as $$$8 from "./sections/StatsSection.tsx";
+import * as $$$9 from "./sections/WorksSection.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -45,7 +46,8 @@ const manifest: DecoManifest = {
     "./sections/Markdown.tsx": $$$5,
     "./sections/ProblemSection.tsx": $$$6,
     "./sections/SolutionsSection.tsx": $$$7,
-    "./sections/WorksSection.tsx": $$$8,
+    "./sections/StatsSection.tsx": $$$8,
+    "./sections/WorksSection.tsx": $$$9,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -326,6 +328,45 @@ const manifest: DecoManifest = {
         },
         "required": [
           "solutionFeatured",
+        ],
+      },
+      "outputSchema": null,
+    },
+    "./sections/StatsSection.tsx": {
+      "inputSchema": {
+        "title": " Stats Section",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+          },
+          "stats": {
+            "type": "array",
+            "items": {
+              "title": "IStats",
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "title": "Value",
+                },
+                "text": {
+                  "type": "string",
+                  "title": "Text",
+                },
+              },
+              "required": [
+                "value",
+                "text",
+              ],
+            },
+            "title": "Stats",
+          },
+        },
+        "required": [
+          "title",
+          "stats",
         ],
       },
       "outputSchema": null,
