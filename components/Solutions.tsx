@@ -1,13 +1,4 @@
-import SolutionItem from "../components/SolutionItem.tsx";
-
-export interface Solution {
-  title: string;
-  description: string;
-  btnLabel: string;
-  btnLink: string;
-  linkLabel: string;
-  linkHref: string;
-}
+import SolutionItem, { Solution } from "../components/SolutionItem.tsx";
 
 interface Solutions {
   listSolutions: Solution[];

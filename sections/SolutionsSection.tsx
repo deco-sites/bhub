@@ -1,6 +1,6 @@
 import { SolutionFeatured, Solutions } from "../components/index.ts";
 import type { ISolutionFeatured } from "../components/SolutionFeatured.tsx";
-import type { Solution } from "../components/Solutions.tsx";
+import type { Solution } from "../components/SolutionItem.tsx";
 
 export interface Props {
   title?: string;

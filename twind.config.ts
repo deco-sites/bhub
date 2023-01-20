@@ -21,6 +21,9 @@ const options: Omit<Options, "selfURL"> = {
         md: "992px",
         lg: "1200px",
       },
+      boxShadow: {
+        "3xl": "0px 0px 30px 10px rgb(0 0 0 / 10%)",
+      },
     },
   },
 };

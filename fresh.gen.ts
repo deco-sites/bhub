@@ -18,10 +18,11 @@ import * as $$$2 from "./sections/FeaturesSection.tsx";
 import * as $$$3 from "./sections/Head.tsx";
 import * as $$$4 from "./sections/Header.tsx";
 import * as $$$5 from "./sections/Markdown.tsx";
-import * as $$$6 from "./sections/ProblemSection.tsx";
-import * as $$$7 from "./sections/SolutionsSection.tsx";
-import * as $$$8 from "./sections/StatsSection.tsx";
-import * as $$$9 from "./sections/WorksSection.tsx";
+import * as $$$6 from "./sections/PlansSection.tsx";
+import * as $$$7 from "./sections/ProblemSection.tsx";
+import * as $$$8 from "./sections/SolutionsSection.tsx";
+import * as $$$9 from "./sections/StatsSection.tsx";
+import * as $$$10 from "./sections/WorksSection.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -44,10 +45,11 @@ const manifest: DecoManifest = {
     "./sections/Head.tsx": $$$3,
     "./sections/Header.tsx": $$$4,
     "./sections/Markdown.tsx": $$$5,
-    "./sections/ProblemSection.tsx": $$$6,
-    "./sections/SolutionsSection.tsx": $$$7,
-    "./sections/StatsSection.tsx": $$$8,
-    "./sections/WorksSection.tsx": $$$9,
+    "./sections/PlansSection.tsx": $$$6,
+    "./sections/ProblemSection.tsx": $$$7,
+    "./sections/SolutionsSection.tsx": $$$8,
+    "./sections/StatsSection.tsx": $$$9,
+    "./sections/WorksSection.tsx": $$$10,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -157,6 +159,92 @@ const manifest: DecoManifest = {
         "required": [
           "text",
         ],
+      },
+      "outputSchema": null,
+    },
+    "./sections/PlansSection.tsx": {
+      "inputSchema": {
+        "title": " Plans Section",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": [
+              "string",
+              "null",
+            ],
+            "title": "Title",
+          },
+          "description": {
+            "type": [
+              "string",
+              "null",
+            ],
+            "title": "Description",
+          },
+          "listPlans": {
+            "type": "array",
+            "items": {
+              "title": "Plan",
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "title": "Title",
+                },
+                "description": {
+                  "type": "string",
+                  "title": "Description",
+                },
+                "details": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                  },
+                  "title": "Details",
+                },
+                "price": {
+                  "type": "string",
+                  "title": "Price",
+                },
+                "btnLabel": {
+                  "type": "string",
+                  "title": "Btn Label",
+                },
+                "btnLink": {
+                  "type": "string",
+                  "title": "Btn Link",
+                },
+                "linkLabel": {
+                  "type": "string",
+                  "title": "Link Label",
+                },
+                "linkHref": {
+                  "type": "string",
+                  "title": "Link Href",
+                },
+              },
+              "required": [
+                "title",
+                "description",
+                "details",
+                "price",
+                "btnLabel",
+                "btnLink",
+                "linkLabel",
+                "linkHref",
+              ],
+            },
+            "title": "List Plans",
+          },
+          "observation": {
+            "type": [
+              "string",
+              "null",
+            ],
+            "title": "Observation",
+          },
+        },
+        "required": [],
       },
       "outputSchema": null,
     },

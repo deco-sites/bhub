@@ -1,6 +1,8 @@
 export { default as InputEmail } from "./InputEmail.tsx";
 export { default as Layout } from "./Layout.tsx";
 export { default as Logo } from "./Logo.tsx";
+export { default as PlanItem } from "./PlanItem.tsx";
+export { default as Plans } from "./Plans.tsx";
 export { default as ProblemItem } from "./ProblemItem.tsx";
 export { default as Problems } from "./Problems.tsx";
 export { default as SlidePickerControls } from "./SlidePickerControls.tsx";

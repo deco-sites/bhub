@@ -1,4 +1,11 @@
-import { Solution } from "../sections/SolutionsSection.tsx";
+export interface Solution {
+  title: string;
+  description: string;
+  btnLabel: string;
+  btnLink: string;
+  linkLabel: string;
+  linkHref: string;
+}
 
 export default function SolutionItem({
   title,
