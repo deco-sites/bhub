@@ -18,16 +18,17 @@ import * as $$$0 from "./sections/Banner.tsx";
 import * as $$$1 from "./sections/CarouselBrandsSection.tsx";
 import * as $$$2 from "./sections/CarouselMediasSection.tsx";
 import * as $$$3 from "./sections/FeaturesSection.tsx";
-import * as $$$4 from "./sections/Head.tsx";
-import * as $$$5 from "./sections/Header.tsx";
-import * as $$$6 from "./sections/Markdown.tsx";
-import * as $$$7 from "./sections/NewsletterSection.tsx";
-import * as $$$8 from "./sections/PlansSection.tsx";
-import * as $$$9 from "./sections/ProblemSection.tsx";
-import * as $$$10 from "./sections/SolutionsSection.tsx";
-import * as $$$11 from "./sections/StatsSection.tsx";
-import * as $$$12 from "./sections/TestimonialsSection.tsx";
-import * as $$$13 from "./sections/WorksSection.tsx";
+import * as $$$4 from "./sections/Footer.tsx";
+import * as $$$5 from "./sections/Head.tsx";
+import * as $$$6 from "./sections/Header.tsx";
+import * as $$$7 from "./sections/Markdown.tsx";
+import * as $$$8 from "./sections/NewsletterSection.tsx";
+import * as $$$9 from "./sections/PlansSection.tsx";
+import * as $$$10 from "./sections/ProblemSection.tsx";
+import * as $$$11 from "./sections/SolutionsSection.tsx";
+import * as $$$12 from "./sections/StatsSection.tsx";
+import * as $$$13 from "./sections/TestimonialsSection.tsx";
+import * as $$$14 from "./sections/WorksSection.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -50,16 +51,17 @@ const manifest: DecoManifest = {
     "./sections/CarouselBrandsSection.tsx": $$$1,
     "./sections/CarouselMediasSection.tsx": $$$2,
     "./sections/FeaturesSection.tsx": $$$3,
-    "./sections/Head.tsx": $$$4,
-    "./sections/Header.tsx": $$$5,
-    "./sections/Markdown.tsx": $$$6,
-    "./sections/NewsletterSection.tsx": $$$7,
-    "./sections/PlansSection.tsx": $$$8,
-    "./sections/ProblemSection.tsx": $$$9,
-    "./sections/SolutionsSection.tsx": $$$10,
-    "./sections/StatsSection.tsx": $$$11,
-    "./sections/TestimonialsSection.tsx": $$$12,
-    "./sections/WorksSection.tsx": $$$13,
+    "./sections/Footer.tsx": $$$4,
+    "./sections/Head.tsx": $$$5,
+    "./sections/Header.tsx": $$$6,
+    "./sections/Markdown.tsx": $$$7,
+    "./sections/NewsletterSection.tsx": $$$8,
+    "./sections/PlansSection.tsx": $$$9,
+    "./sections/ProblemSection.tsx": $$$10,
+    "./sections/SolutionsSection.tsx": $$$11,
+    "./sections/StatsSection.tsx": $$$12,
+    "./sections/TestimonialsSection.tsx": $$$13,
+    "./sections/WorksSection.tsx": $$$14,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -103,6 +105,10 @@ const manifest: DecoManifest = {
           "image",
         ],
       },
+      "outputSchema": null,
+    },
+    "./sections/Footer.tsx": {
+      "inputSchema": null,
       "outputSchema": null,
     },
     "./sections/Head.tsx": {
