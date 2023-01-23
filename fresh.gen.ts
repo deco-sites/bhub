@@ -21,12 +21,13 @@ import * as $$$3 from "./sections/FeaturesSection.tsx";
 import * as $$$4 from "./sections/Head.tsx";
 import * as $$$5 from "./sections/Header.tsx";
 import * as $$$6 from "./sections/Markdown.tsx";
-import * as $$$7 from "./sections/PlansSection.tsx";
-import * as $$$8 from "./sections/ProblemSection.tsx";
-import * as $$$9 from "./sections/SolutionsSection.tsx";
-import * as $$$10 from "./sections/StatsSection.tsx";
-import * as $$$11 from "./sections/TestimonialsSection.tsx";
-import * as $$$12 from "./sections/WorksSection.tsx";
+import * as $$$7 from "./sections/NewsletterSection.tsx";
+import * as $$$8 from "./sections/PlansSection.tsx";
+import * as $$$9 from "./sections/ProblemSection.tsx";
+import * as $$$10 from "./sections/SolutionsSection.tsx";
+import * as $$$11 from "./sections/StatsSection.tsx";
+import * as $$$12 from "./sections/TestimonialsSection.tsx";
+import * as $$$13 from "./sections/WorksSection.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -52,12 +53,13 @@ const manifest: DecoManifest = {
     "./sections/Head.tsx": $$$4,
     "./sections/Header.tsx": $$$5,
     "./sections/Markdown.tsx": $$$6,
-    "./sections/PlansSection.tsx": $$$7,
-    "./sections/ProblemSection.tsx": $$$8,
-    "./sections/SolutionsSection.tsx": $$$9,
-    "./sections/StatsSection.tsx": $$$10,
-    "./sections/TestimonialsSection.tsx": $$$11,
-    "./sections/WorksSection.tsx": $$$12,
+    "./sections/NewsletterSection.tsx": $$$7,
+    "./sections/PlansSection.tsx": $$$8,
+    "./sections/ProblemSection.tsx": $$$9,
+    "./sections/SolutionsSection.tsx": $$$10,
+    "./sections/StatsSection.tsx": $$$11,
+    "./sections/TestimonialsSection.tsx": $$$12,
+    "./sections/WorksSection.tsx": $$$13,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -170,6 +172,37 @@ const manifest: DecoManifest = {
         },
         "required": [
           "text",
+        ],
+      },
+      "outputSchema": null,
+    },
+    "./sections/NewsletterSection.tsx": {
+      "inputSchema": {
+        "title": " Newsletter Section",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+          },
+          "subtitle": {
+            "type": "string",
+            "title": "Subtitle",
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+          },
+          "buttonLabel": {
+            "type": "string",
+            "title": "Button Label",
+          },
+        },
+        "required": [
+          "title",
+          "subtitle",
+          "description",
+          "buttonLabel",
         ],
       },
       "outputSchema": null,
