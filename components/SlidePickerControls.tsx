@@ -12,7 +12,7 @@ export default function SlidePickerControls({
 }: h.JSX.HTMLAttributes<HTMLButtonElement>) {
   return (
     <button
-      class={`clear-both mr-1.5 h-2.5 w-2.5 focus:bg-primary focus:outline-none rounded-full border-0 ${className} ${
+      class={`clear-both mr-1.5 h-2.5 w-2.5 focus:bg-primary focus:outline-none rounded-full border-1 border-white ${className} ${
         selected ? "bg-primary" : "bg-gray-200"
       }`}
       aria-label="slide picker control"

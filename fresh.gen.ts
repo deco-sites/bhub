@@ -9,22 +9,24 @@ import * as $1 from "./routes/_app.tsx";
 import * as $2 from "./routes/_middleware.ts";
 import * as $3 from "./routes/index.tsx";
 import * as $$0 from "./islands/CarouselBrands.tsx";
-import * as $$1 from "./islands/LiveControls.tsx";
-import * as $$2 from "./islands/NavBarItem.tsx";
-import * as $$3 from "./islands/Navbar.tsx";
-import * as $$4 from "./islands/Testimonials.tsx";
+import * as $$1 from "./islands/CarouselMedias.tsx";
+import * as $$2 from "./islands/LiveControls.tsx";
+import * as $$3 from "./islands/NavBarItem.tsx";
+import * as $$4 from "./islands/Navbar.tsx";
+import * as $$5 from "./islands/Testimonials.tsx";
 import * as $$$0 from "./sections/Banner.tsx";
 import * as $$$1 from "./sections/CarouselBrandsSection.tsx";
-import * as $$$2 from "./sections/FeaturesSection.tsx";
-import * as $$$3 from "./sections/Head.tsx";
-import * as $$$4 from "./sections/Header.tsx";
-import * as $$$5 from "./sections/Markdown.tsx";
-import * as $$$6 from "./sections/PlansSection.tsx";
-import * as $$$7 from "./sections/ProblemSection.tsx";
-import * as $$$8 from "./sections/SolutionsSection.tsx";
-import * as $$$9 from "./sections/StatsSection.tsx";
-import * as $$$10 from "./sections/TestimonialsSection.tsx";
-import * as $$$11 from "./sections/WorksSection.tsx";
+import * as $$$2 from "./sections/CarouselMediasSection.tsx";
+import * as $$$3 from "./sections/FeaturesSection.tsx";
+import * as $$$4 from "./sections/Head.tsx";
+import * as $$$5 from "./sections/Header.tsx";
+import * as $$$6 from "./sections/Markdown.tsx";
+import * as $$$7 from "./sections/PlansSection.tsx";
+import * as $$$8 from "./sections/ProblemSection.tsx";
+import * as $$$9 from "./sections/SolutionsSection.tsx";
+import * as $$$10 from "./sections/StatsSection.tsx";
+import * as $$$11 from "./sections/TestimonialsSection.tsx";
+import * as $$$12 from "./sections/WorksSection.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -36,24 +38,26 @@ const manifest: DecoManifest = {
   },
   islands: {
     "./islands/CarouselBrands.tsx": $$0,
-    "./islands/LiveControls.tsx": $$1,
-    "./islands/NavBarItem.tsx": $$2,
-    "./islands/Navbar.tsx": $$3,
-    "./islands/Testimonials.tsx": $$4,
+    "./islands/CarouselMedias.tsx": $$1,
+    "./islands/LiveControls.tsx": $$2,
+    "./islands/NavBarItem.tsx": $$3,
+    "./islands/Navbar.tsx": $$4,
+    "./islands/Testimonials.tsx": $$5,
   },
   sections: {
     "./sections/Banner.tsx": $$$0,
     "./sections/CarouselBrandsSection.tsx": $$$1,
-    "./sections/FeaturesSection.tsx": $$$2,
-    "./sections/Head.tsx": $$$3,
-    "./sections/Header.tsx": $$$4,
-    "./sections/Markdown.tsx": $$$5,
-    "./sections/PlansSection.tsx": $$$6,
-    "./sections/ProblemSection.tsx": $$$7,
-    "./sections/SolutionsSection.tsx": $$$8,
-    "./sections/StatsSection.tsx": $$$9,
-    "./sections/TestimonialsSection.tsx": $$$10,
-    "./sections/WorksSection.tsx": $$$11,
+    "./sections/CarouselMediasSection.tsx": $$$2,
+    "./sections/FeaturesSection.tsx": $$$3,
+    "./sections/Head.tsx": $$$4,
+    "./sections/Header.tsx": $$$5,
+    "./sections/Markdown.tsx": $$$6,
+    "./sections/PlansSection.tsx": $$$7,
+    "./sections/ProblemSection.tsx": $$$8,
+    "./sections/SolutionsSection.tsx": $$$9,
+    "./sections/StatsSection.tsx": $$$10,
+    "./sections/TestimonialsSection.tsx": $$$11,
+    "./sections/WorksSection.tsx": $$$12,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -62,6 +66,10 @@ const manifest: DecoManifest = {
       "outputSchema": null,
     },
     "./sections/CarouselBrandsSection.tsx": {
+      "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/CarouselMediasSection.tsx": {
       "inputSchema": null,
       "outputSchema": null,
     },
