@@ -2,7 +2,7 @@ import { InputEmail } from "../components/index.ts";
 
 export default function Banner() {
   return (
-    <div className="pt-28 pb-16">
+    <div className="pt-48 sm:pt-60 pb-16">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row justify-center items-center">
           <div className="flex flex-col justify-center lg:justify-start items-center lg:w-1/2 px-4 lg:pl-3 lg:pr-12">
@@ -21,6 +21,21 @@ export default function Banner() {
               src="/frame-1.png"
               alt=""
               className="absolute top-0 left-0 lg:-left-20 max-w-[165px] lg:max-w-none"
+            />
+            <img
+              src="/frame-2.png"
+              alt=""
+              className="absolute top-0 right-0 lg:-right-20 max-w-[165px] lg:max-w-none"
+            />
+            <img
+              src="/frame-3.png"
+              alt=""
+              className="absolute bottom-[15%] left-0 lg:-left-10 max-w-[165px] lg:max-w-none"
+            />
+            <img
+              src="/frame-4.png"
+              alt=""
+              className="absolute bottom-[15%] right-0 lg:-right-20 max-w-[165px] lg:max-w-none"
             />
             <img src="/banner.png" alt="" />
           </div>

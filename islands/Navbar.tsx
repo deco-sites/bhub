@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <>
       <div class="h-0 lg:h-auto lg:relative bg-white shadow-lg">
-        <div class="mx-auto max-w-6xl px-3 lg:px-2 shadow-lg lg:shadow-none">
+        <div class="mx-auto max-w-6xl px-3 lg:px-2 shadow-lg lg:shadow-none bg-white">
           <div class="flex items-center justify-between py-3 lg:py-5">
             <div class="flex justify-start">
               <a href="#" className="w-[120px]">
