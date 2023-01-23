@@ -1,25 +1,31 @@
-interface Props {
-  imgSrc: string;
+import type { Image as LiveImage } from "$live/std/ui/types/Image.ts";
+
+export interface MediaItem {
+  imgSrc: LiveImage;
   altText: string;
-  class: string;
+  link: string;
+  class?: string;
 }
 
 export default function CarouselMediaItem({
   imgSrc,
   altText,
+  link,
   class: className,
-}: Props) {
+}: MediaItem) {
   return (
     <div class={`max-w-[300px] relative flex-shrink-0 ${className}`}>
-      <div className="w-[170px] h-[170px] sm:w-[286px] sm:h-[286px] flex justify-center items-center">
-        <img
-          src={imgSrc}
-          alt={altText}
-          width="300"
-          height="300"
-          className="w-auto max-h-full"
-        />
-      </div>
+      <a href={link}>
+        <div className="w-[170px] h-[170px] md:w-[200px] md:h-[200px] 2xl:w-[286px] 2xl:h-[286px] flex justify-center items-center">
+          <img
+            src={imgSrc}
+            alt={altText}
+            width="300"
+            height="300"
+            className="w-auto max-h-full"
+          />
+        </div>
+      </a>
     </div>
   );
 }

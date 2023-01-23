@@ -1,6 +1,11 @@
+import type { MediaItem } from "../components/CarouselMediaItem.tsx";
 import CarouselMedias from "../islands/CarouselMedias.tsx";
 
-export default function CarouselMediasSection() {
+export interface Props {
+  listMedias: MediaItem[];
+}
+
+export default function CarouselMediasSection({ listMedias }: Props) {
   return (
     <div className="bg-primary">
       <div className="mt-16 py-24 px-0 w-11/12 mx-auto text-center">
@@ -9,7 +14,7 @@ export default function CarouselMediasSection() {
           Veja algumas matérias sobre a BHub.
         </p>
         <div class="w-full scroll-snap-x mt-20">
-          <CarouselMedias />
+          <CarouselMedias listMedias={listMedias} />
         </div>
       </div>
     </div>

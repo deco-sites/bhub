@@ -74,7 +74,48 @@ const manifest: DecoManifest = {
       "outputSchema": null,
     },
     "./sections/CarouselMediasSection.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Carousel Medias Section",
+        "type": "object",
+        "properties": {
+          "listMedias": {
+            "type": "array",
+            "items": {
+              "title": "MediaItem",
+              "type": "object",
+              "properties": {
+                "imgSrc": {
+                  "format": "image-uri",
+                  "type": "string",
+                  "title": "Img Src",
+                },
+                "altText": {
+                  "type": "string",
+                  "title": "Alt Text",
+                },
+                "link": {
+                  "type": "string",
+                  "title": "Link",
+                },
+                "class": {
+                  "type": "string",
+                  "title": "Class",
+                },
+              },
+              "required": [
+                "imgSrc",
+                "altText",
+                "link",
+                "class",
+              ],
+            },
+            "title": "List Medias",
+          },
+        },
+        "required": [
+          "listMedias",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/FeaturesSection.tsx": {
