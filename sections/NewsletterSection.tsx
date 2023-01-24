@@ -20,6 +20,9 @@ export default function StatsSection({
           alt=""
           width={255}
           height={163}
+          loading="lazy"
+          decoding="async"
+          sizes="(max-width: 640px) 40vw, 20vw"
         />
         <img
           className="absolute top-0 right-0 sm:hidden block rounded-t-3xl"
@@ -27,6 +30,9 @@ export default function StatsSection({
           alt=""
           width={99}
           height={90}
+          loading="lazy"
+          decoding="async"
+          sizes="(max-width: 640px) 40vw, 20vw"
         />
         <h2 className="text-black text-lg sm:text-[40px] sm:leading-10 font-bold tracking-tighter">
           {title}

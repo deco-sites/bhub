@@ -1,3 +1,4 @@
+import Image from "$live/std/ui/components/Image.tsx";
 import type { Image as LiveImage } from "$live/std/ui/types/Image.ts";
 import { InputEmail } from "../components/index.ts";
 
@@ -49,7 +50,15 @@ export default function FeaturesSection({
           </div>
           <div className="flex">
             <figure className="sm:absolute right-0 top-24 w-full sm:max-w-[50%] md:w-auto">
-              <img src={image} alt="features" />
+              <Image
+                src={image}
+                alt="features"
+                loading="lazy"
+                decoding="async"
+                width={782}
+                height={634}
+                sizes="(max-width: 640px) 40vw, 20vw"
+              />
             </figure>
           </div>
         </div>

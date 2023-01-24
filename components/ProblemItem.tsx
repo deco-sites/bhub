@@ -1,3 +1,4 @@
+import Image from "$live/std/ui/components/Image.tsx";
 import type { Image as LiveImage } from "$live/std/ui/types/Image.ts";
 
 export interface Problem {
@@ -11,10 +12,15 @@ export interface Problem {
 export default function ProblemItem({ alt, src, title, description }: Problem) {
   return (
     <div class={`w-full relative bg-white rounded-3xl flex-shrink-0`}>
-      <img
+      <Image
         src={src || "/image-clock.jpg"}
         alt={alt}
-        className="h-32 w-full rounded-t-3xl"
+        width={456}
+        height={123}
+        loading="lazy"
+        decoding="async"
+        sizes="(max-width: 640px) 40vw, 20vw"
+        class="h-32 w-full rounded-t-3xl"
       />
       <div className="min-h-[230px] py-8 px-4 text-center">
         <h2 className="text-2xl font-bold mb-4">

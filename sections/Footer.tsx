@@ -56,7 +56,15 @@ export default function Footer() {
 
           <div className="flex">
             <div>
-              <img src="selo-forbes.png" alt="" height={108} width={95} />
+              <img
+                src="./selo-forbes.png"
+                alt=""
+                height={108}
+                width={95}
+                loading="lazy"
+                decoding="async"
+                sizes="(max-width: 640px) 40vw, 20vw"
+              />
             </div>
           </div>
           <div className="flex flex-col w-full md:w-1/5 px-3">

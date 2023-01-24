@@ -1,3 +1,4 @@
+import Image from "$live/std/ui/components/Image.tsx";
 import type { Image as LiveImage } from "$live/std/ui/types/Image.ts";
 
 export interface ISolutionFeatured {
@@ -24,9 +25,14 @@ export default function SolutionFeatured({
   return (
     <div className="w-full grid sm:grid-cols-2 rounded-3xl bg-white mb-10">
       <figure className="h-full w-full flex-shrink">
-        <img
-          src={image}
+        <Image
+          src={image!}
           alt={alt}
+          width={650}
+          height={318}
+          loading="lazy"
+          decoding="async"
+          sizes="(max-width: 640px) 40vw, 20vw"
           className="h-full rounded-3xl sm:rounded-l-3xl object-cover"
         />
       </figure>

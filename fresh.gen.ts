@@ -66,11 +66,106 @@ const manifest: DecoManifest = {
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
     "./sections/Banner.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Banner",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+          },
+          "subtitle": {
+            "type": "string",
+            "title": "Subtitle",
+          },
+          "imageBanner": {
+            "format": "image-uri",
+            "type": "string",
+            "title": "Image Banner",
+          },
+          "imageOne": {
+            "format": "image-uri",
+            "type": "string",
+            "title": "Image One",
+          },
+          "imageTwo": {
+            "format": "image-uri",
+            "type": "string",
+            "title": "Image Two",
+          },
+          "imageThree": {
+            "format": "image-uri",
+            "type": "string",
+            "title": "Image Three",
+          },
+          "imageFour": {
+            "format": "image-uri",
+            "type": "string",
+            "title": "Image Four",
+          },
+        },
+        "required": [
+          "title",
+          "subtitle",
+          "imageBanner",
+          "imageOne",
+          "imageTwo",
+          "imageThree",
+          "imageFour",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/CarouselBrandsSection.tsx": {
-      "inputSchema": null,
+      "inputSchema": {
+        "title": " Carousel Brands Section",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+          },
+          "subtitle": {
+            "type": "string",
+            "title": "Subtitle",
+          },
+          "brands": {
+            "type": "array",
+            "items": {
+              "title": "Brand",
+              "type": "object",
+              "properties": {
+                "imgSrc": {
+                  "format": "image-uri",
+                  "type": "string",
+                  "title": "Img Src",
+                },
+                "altText": {
+                  "type": "string",
+                  "title": "Alt Text",
+                },
+                "class": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Class",
+                },
+              },
+              "required": [
+                "imgSrc",
+                "altText",
+              ],
+            },
+            "title": "Brands",
+          },
+        },
+        "required": [
+          "title",
+          "subtitle",
+          "brands",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/CarouselMediasSection.tsx": {
@@ -98,7 +193,10 @@ const manifest: DecoManifest = {
                   "title": "Link",
                 },
                 "class": {
-                  "type": "string",
+                  "type": [
+                    "string",
+                    "null",
+                  ],
                   "title": "Class",
                 },
               },
@@ -106,7 +204,6 @@ const manifest: DecoManifest = {
                 "imgSrc",
                 "altText",
                 "link",
-                "class",
               ],
             },
             "title": "List Medias",
