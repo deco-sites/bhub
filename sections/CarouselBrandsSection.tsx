@@ -14,8 +14,8 @@ export default function CarouselBrandsSection({
 }: Props) {
   return (
     <div className="pt-8 pb-16 px-0 w-11/12 mx-auto text-center">
-      <h2 className="text-[32px] mb-5 font-bold">{title}</h2>
-      <p className="text-lg font-medium mb-6">{subtitle}</p>
+      <h2 className="text-[32px] mb-5 font-bold text-white">{title}</h2>
+      <p className="text-lg font-medium mb-6 text-white">{subtitle}</p>
       <div class="w-full scroll-snap-x mt-20">
         <CarouselBrands brands={brands} />
       </div>

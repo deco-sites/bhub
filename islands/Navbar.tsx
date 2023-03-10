@@ -8,8 +8,8 @@ export default function Navbar() {
 
   return (
     <>
-      <div class="h-0 lg:h-auto lg:relative bg-white shadow-lg">
-        <div class="mx-auto max-w-6xl px-3 lg:px-2 shadow-lg lg:shadow-none bg-white">
+      <div class="h-0 lg:h-auto lg:relative bg-black shadow-navbar">
+        <div class="mx-auto max-w-7xl px-3 lg:px-2 bg-black">
           <div class="flex items-center justify-between py-3 lg:py-5">
             <div class="flex justify-start">
               <a href="#" className="w-[120px]">
@@ -20,7 +20,7 @@ export default function Navbar() {
               {!openMenu ? (
                 <button
                   type="button"
-                  class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                  class="inline-flex items-center justify-center rounded-md bg-black p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                   aria-expanded="false"
                   onClick={() => setOpenMenu(!openMenu)}>
                   <span class="sr-only">Open menu</span>
@@ -64,7 +64,7 @@ export default function Navbar() {
                 </button>
               )}
             </div>
-            <nav class="hidden md:flex flex-1 gap-x-6 justify-end">
+            <nav class="hidden md:flex flex-1 gap-x-10 justify-end">
               {menu.map((itemMenu) => (
                 <NavBarItem {...itemMenu} />
               ))}
@@ -72,7 +72,7 @@ export default function Navbar() {
             <div class="hidden items-center justify-end md:flex">
               <a
                 href="#"
-                class="ml-4 inline-flex items-center justify-center whitespace-nowrap rounded-[10px] border border-transparent bg-primary px-3 py-2 text-base font-bold text-white shadow-sm hover:bg-indigo-700">
+                class="ml-10 inline-flex items-center justify-center whitespace-nowrap rounded-[10px] border border-transparent bg-primary px-3 py-2 text-base font-bold text-white shadow-sm hover:bg-indigo-700">
                 Falar com especialista
               </a>
             </div>
@@ -83,7 +83,7 @@ export default function Navbar() {
           class={`${
             openMenu ? "left-0 transition-all" : ""
           } h-screen relative md:hidden top-0 -left-full ease-out delay-150 duration-200 `}>
-          <div class="bg-white shadow-lg h-screen ">
+          <div class="bg-black shadow-lg h-screen ">
             <div class="px-5 pt-2 pb-6">
               <div class="flex flex-col space-y-8">
                 {menu.map((itemMenu) => (

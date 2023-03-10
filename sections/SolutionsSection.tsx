@@ -14,8 +14,8 @@ export default function SolutionsSection({
   listSolutions,
 }: Props) {
   return (
-    <div className="bg-primary">
-      <div className="mx-auto max-w-6xl px-3 sm:px-2 py-12 sm:py-14 bg-primary">
+    <div className="bg-black">
+      <div className="mx-auto max-w-7xl px-3 sm:px-2 py-12 sm:py-14">
         <h2 className="text-white text-3xl text-center font-bold mb-10">
           {titleSolution}
         </h2>

@@ -4,7 +4,7 @@ export default function InputEmail() {
       <input
         type="text"
         placeholder="Seu e-mail profissional"
-        className="h-9 px-3 rounded-lg border-1 border-gray-500 self-start mb-5 w-full"
+        className="h-9 px-3 rounded-lg border-1 border-gray-500 self-start mb-5 w-full lg:w-3/4 bg-black"
       />
       <a
         href="#"

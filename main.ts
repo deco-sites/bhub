@@ -3,20 +3,20 @@
 /// <reference lib="deno.ns" />
 /// <reference lib="esnext" />
 
-import manifest from "./fresh.gen.ts";
-import { start } from "$fresh/server.ts";
 import twindPlugin from "$fresh/plugins/twind.ts";
-import twindConfig from "./twind.config.ts";
-import prefetchPlugin from "prefetch";
-import partytownPlugin from "partytown/mod.ts";
+import { start } from "$fresh/server.ts";
 import stylesPlugin from "$live/plugins/styles.ts";
+import partytownPlugin from "partytown/mod.ts";
+import prefetchPlugin from "prefetch";
+import manifest from "./fresh.gen.ts";
+import twindConfig from "./twind.config.ts";
 
 await start(manifest, {
   plugins: [
     prefetchPlugin(),
     partytownPlugin(),
     stylesPlugin(
-      "html{height: 100%;scroll-behavior:smooth;} body{height:100%}"
+      "html{height: 100%;scroll-behavior:smooth;} body{height:100%;background:#141414;}"
     ),
     twindPlugin({
       selfURL: new URL("./twind.config.ts", import.meta.url).href,

@@ -5,12 +5,7 @@ export const menu = [
     items: [],
   },
   {
-    label: "Como funciona",
-    link: "/#",
-    items: [],
-  },
-  {
-    label: "Planos e Preços",
+    label: "Soluções",
     link: "/#",
     items: [
       {
@@ -44,11 +39,19 @@ export const menu = [
         link: "/#",
       },
       {
-        label: "Hub do empreendedor",
+        label: "Contabilidade as a Service",
         link: "/#",
       },
       {
-        label: "Hub do empreendedor",
+        label: "Financeiro as a Service",
+        link: "/#",
+      },
+      {
+        label: "BHub Prime",
+        link: "/#",
+      },
+      {
+        label: "Paralegal as a Service",
         link: "/#",
       },
     ],
@@ -66,5 +69,15 @@ export const menu = [
         link: "/#",
       },
     ],
+  },
+  {
+    label: "BHub Club",
+    link: "/#",
+    items: [],
+  },
+  {
+    label: "Carreiras",
+    link: "/#",
+    items: [],
   },
 ];

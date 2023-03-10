@@ -12,7 +12,7 @@ export default function StatsSection({
   buttonLabel,
 }: Props) {
   return (
-    <div className="mx-auto max-w-6xl px-3 sm:px-2 py-12 sm:pb-8 sm:pt-16">
+    <div className="mx-auto max-w-7xl px-3 sm:px-2 py-12 sm:pb-8 sm:pt-16">
       <div className="flex flex-col relative shadow-3xl rounded-3xl p-3.5 sm:px-16 sm:py-10 mx-0 sm:mx-5">
         <img
           className="absolute top-0 right-0 hidden sm:block"

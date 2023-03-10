@@ -18,13 +18,13 @@ export default function NavBarItem({ label, link, items }: Props) {
     <div class="relative cursor-pointer">
       <div
         type="button"
-        class="text-[#232323] group inline-flex items-center rounded-md text-xs lg:text-base font-medium hover:text-gray-900 focus:outline-none"
+        class="text-white group inline-flex items-center rounded-md text-xs lg:text-base font-medium hover:text-primary focus:outline-none"
         aria-expanded="false"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}>
         <span>{label}</span>
         <svg
-          class="text-[#232323] h-5 w-5 group-hover:text-gray-500 -rotate-90"
+          class="text-white h-5 w-5 group-hover:text-gray-500 -rotate-90"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
@@ -46,12 +46,12 @@ export default function NavBarItem({ label, link, items }: Props) {
         } absolute z-10 -ml-4 pt-3 max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2`}>
         {items.map((item) => {
           return (
-            <div class="overflow-hidden shadow-lg border-b-1">
-              <div class="relative grid gap-3 bg-white px-4 py-3">
+            <div class="overflow-hidden shadow-navbar border-b-1 border-darkGrey">
+              <div class="relative grid gap-3 bg-black px-4 py-3">
                 <a
                   href={item.link}
-                  class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
-                  <p class="text-base font-medium text-[#232323] leading-5">
+                  class="-m-3 flex items-start rounded-lg p-3">
+                  <p class="text-base font-medium text-white leading-5">
                     {item.label}
                   </p>
                 </a>
@@ -65,7 +65,7 @@ export default function NavBarItem({ label, link, items }: Props) {
     <span className="relative group">
       <a
         href={link}
-        class="text-xs lg:text-base font-medium text-[#232323] hover:text-gray-900">
+        class="text-xs lg:text-base font-medium text-white hover:text-primary">
         {label}
       </a>
       <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all group-hover:w-full duration-500"></span>

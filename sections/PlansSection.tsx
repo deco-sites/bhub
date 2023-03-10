@@ -15,10 +15,14 @@ export default function PlansSection({
   observation,
 }: Props) {
   return (
-    <div className="bg-white">
+    <div className="bg-black">
       <div className="mx-auto max-w-7xl px-3 sm:px-2 py-12 sm:py-14 text-center">
-        <h2 className="text-3xl text-center font-bold mb-10">{title}</h2>
-        <p className="lg:w-3/4 mx-auto text-2xl mb-20">{description}</p>
+        <h2 className="text-3xl text-center font-bold mb-10 text-white">
+          {title}
+        </h2>
+        <p className="lg:w-3/4 mx-auto text-2xl mb-20 text-white">
+          {description}
+        </p>
 
         {listPlans && (
           <div className="scroll-snap-x">

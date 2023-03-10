@@ -15,10 +15,10 @@ export default function FeaturesSection({
 }: Props) {
   return (
     <div className="relative">
-      <div className="mx-auto max-w-6xl px-3 sm:px-2 py-12 sm:py-24">
+      <div className="mx-auto max-w-7xl px-3 sm:px-2 py-12 sm:py-24">
         <div className="grid sm:grid-cols-2">
-          <div className="flex flex-col justify-start">
-            <h2 className="text-black text-[32px] leading-10 font-bold mb-10">
+          <div className="flex flex-col justify-start lg:pr-20">
+            <h2 className="text-white text-[32px] leading-10 font-bold mb-10">
               {title}
             </h2>
             <ul>
@@ -37,7 +37,7 @@ export default function FeaturesSection({
                         fill="#FF5EB5"
                       />
                     </svg>
-                    <span className="font-medium ml-3 leading-6">
+                    <span className="font-medium ml-3 leading-6 text-white">
                       {feature}
                     </span>
                   </p>

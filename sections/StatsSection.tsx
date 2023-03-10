@@ -9,9 +9,9 @@ export interface Props {
 export default function StatsSection({ title, stats = [] }: Props) {
   return (
     <div className="relative">
-      <div className="mx-auto max-w-6xl px-3 sm:px-2 py-12 sm:py-24">
+      <div className="mx-auto max-w-7xl px-3 sm:px-16 py-12 sm:py-24">
         <div className="flex flex-col">
-          <h2 className="text-black text-3xl sm:text-[32px] leading-10 font-bold mb-10 text-center">
+          <h2 className="text-white text-3xl sm:text-[32px] leading-10 font-bold mb-10 text-center">
             {title}
           </h2>
           <div className="scroll-snap-x">

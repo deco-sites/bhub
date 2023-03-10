@@ -20,10 +20,10 @@ export default function PlanItem({
   linkHref,
 }: Plan) {
   return (
-    <div className="w-full flex flex-col justify-between items-center px-6 sm:px-8 py-7 rounded-3xl bg-white shadow-lg sm:shadow-3xl hover:shadow-2xl">
+    <div className="w-full flex flex-col justify-between items-center px-6 sm:px-8 py-7 rounded-3xl bg-smoke">
       <div>
-        <h2 className="font-bold mb-2 text-2xl text-[#ff5eb5]">{title}</h2>
-        <p className="text-base font-bold mb-6">{description}</p>
+        <h2 className="font-bold mb-2 text-2xl text-white">{title}</h2>
+        <p className="text-base font-bold mb-6 text-white">{description}</p>
       </div>
       <p className="text-base font-bold mb-6 flex justify-center items-center text-primary">
         Mais detalhes

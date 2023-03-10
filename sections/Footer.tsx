@@ -3,7 +3,7 @@ import { Logo } from "../components/index.ts";
 export default function Footer() {
   return (
     <footer>
-      <div className="mx-auto max-w-6xl px-3 sm:px-2 py-12 sm:py-24">
+      <div className="mx-auto max-w-7xl px-3 sm:px-2 py-12 sm:py-24">
         <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left">
           <div className="flex flex-col w-full md:w-1/4 pl-3 pr-12">
             <div className="mb-9 mx-auto md:mx-0">

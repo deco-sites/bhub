@@ -10,7 +10,13 @@ const options: Omit<Options, "selfURL"> = {
   theme: {
     extend: {
       colors: {
-        primary: "#3763ff",
+        primary: "#FF0E70",
+        black: "#141414",
+        white: "#f9f9f9",
+        secondaryDark: "#CE0067",
+        secondaryLight: "#ff3198",
+        darkGrey: "#282828",
+        smoke: "#ffffff1a",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
@@ -19,10 +25,11 @@ const options: Omit<Options, "selfURL"> = {
       screens: {
         sm: "768px",
         md: "992px",
-        lg: "1200px",
+        lg: "1280px",
       },
       boxShadow: {
         "3xl": "0px 0px 30px 10px rgb(0 0 0 / 10%)",
+        navbar: "0px 4px 4px rgba(0, 0, 0, 0.4)",
       },
     },
   },

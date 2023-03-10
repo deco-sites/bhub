@@ -11,8 +11,8 @@ export default function ProblemSection({
   listProblems = [{}, {}, {}, {}],
 }: Props) {
   return (
-    <div className="bg-primary">
-      <div className="mx-auto max-w-6xl px-3 lg:px-2 py-12 lg:py-24 bg-primary">
+    <div className="bg-black">
+      <div className="mx-auto max-w-7xl px-3 lg:px-16 py-12 lg:py-24">
         <h2 className="text-white text-3xl text-center font-bold mb-10">
           {title}
         </h2>
