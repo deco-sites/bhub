@@ -33,11 +33,8 @@ export default function PlanItem({
           height="9"
           viewBox="0 0 16 9"
           fill="none"
-          className="ml-2">
-          <path
-            d="M0.790527 1.19038L8.33319 8.96875L15.8759 1.19038L14.9332 0.21825L8.33319 7.0245L1.73319 0.21825L0.790527 1.19038Z"
-            fill="#3763ff"
-          />
+          className="ml-2 fill-current">
+          <path d="M0.790527 1.19038L8.33319 8.96875L15.8759 1.19038L14.9332 0.21825L8.33319 7.0245L1.73319 0.21825L0.790527 1.19038Z" />
         </svg>
       </p>
       <ul className="hidden">
@@ -45,7 +42,7 @@ export default function PlanItem({
           <li>{detail}</li>
         ))}
       </ul>
-      <p className="font-bold">*A partir de</p>
+      <p className="font-bold text-white">*A partir de</p>
       <h4 className="font-bold text-primary text-[40px]">{price}</h4>
       <div className="flex flex-col items-center">
         <a
@@ -53,9 +50,7 @@ export default function PlanItem({
           className="bg-primary text-white font-bold text-lg py-2 px-6 rounded-lg mb-2.5">
           {btnLabel}
         </a>
-        <a
-          href={linkHref}
-          className="text-base text-primary font-bold underline">
+        <a href={linkHref} className="text-base text-white font-bold underline">
           {linkLabel}
         </a>
       </div>

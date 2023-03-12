@@ -14,6 +14,7 @@ import * as $$2 from "./islands/LiveControls.tsx";
 import * as $$3 from "./islands/NavBarItem.tsx";
 import * as $$4 from "./islands/Navbar.tsx";
 import * as $$5 from "./islands/Testimonials.tsx";
+import * as $$6 from "./islands/TopBar.tsx";
 import * as $$$0 from "./sections/Banner.tsx";
 import * as $$$1 from "./sections/CarouselBrandsSection.tsx";
 import * as $$$2 from "./sections/CarouselMediasSection.tsx";
@@ -28,7 +29,8 @@ import * as $$$10 from "./sections/ProblemSection.tsx";
 import * as $$$11 from "./sections/SolutionsSection.tsx";
 import * as $$$12 from "./sections/StatsSection.tsx";
 import * as $$$13 from "./sections/TestimonialsSection.tsx";
-import * as $$$14 from "./sections/WorksSection.tsx";
+import * as $$$14 from "./sections/UsersCardSection.tsx";
+import * as $$$15 from "./sections/WorksSection.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -45,6 +47,7 @@ const manifest: DecoManifest = {
     "./islands/NavBarItem.tsx": $$3,
     "./islands/Navbar.tsx": $$4,
     "./islands/Testimonials.tsx": $$5,
+    "./islands/TopBar.tsx": $$6,
   },
   sections: {
     "./sections/Banner.tsx": $$$0,
@@ -61,7 +64,8 @@ const manifest: DecoManifest = {
     "./sections/SolutionsSection.tsx": $$$11,
     "./sections/StatsSection.tsx": $$$12,
     "./sections/TestimonialsSection.tsx": $$$13,
-    "./sections/WorksSection.tsx": $$$14,
+    "./sections/UsersCardSection.tsx": $$$14,
+    "./sections/WorksSection.tsx": $$$15,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -680,6 +684,74 @@ const manifest: DecoManifest = {
         },
         "required": [
           "testimonials",
+        ],
+      },
+      "outputSchema": null,
+    },
+    "./sections/UsersCardSection.tsx": {
+      "inputSchema": {
+        "title": " Users Card Section",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+          },
+          "subtitle": {
+            "type": [
+              "string",
+              "null",
+            ],
+            "title": "Subtitle",
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "title": "UserCard",
+              "type": "object",
+              "properties": {
+                "imgSrc": {
+                  "format": "image-uri",
+                  "type": "string",
+                  "title": "Img Src",
+                },
+                "altText": {
+                  "type": "string",
+                  "title": "Alt Text",
+                },
+                "name": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Name",
+                },
+                "position": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Position",
+                },
+                "linkedin": {
+                  "type": [
+                    "string",
+                    "null",
+                  ],
+                  "title": "Linkedin",
+                },
+              },
+              "required": [
+                "imgSrc",
+                "altText",
+              ],
+            },
+            "title": "Users",
+          },
+        },
+        "required": [
+          "title",
+          "users",
         ],
       },
       "outputSchema": null,

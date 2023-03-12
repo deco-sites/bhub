@@ -18,7 +18,7 @@ export default function NavBarItem({ label, link, items }: Props) {
     <div class="relative cursor-pointer">
       <div
         type="button"
-        class="text-white group inline-flex items-center rounded-md text-xs lg:text-base font-medium hover:text-primary focus:outline-none"
+        class="text-white group inline-flex items-center rounded-md text-xs lg:text-base font-medium hover:text-primary focus:outline-none transition-all"
         aria-expanded="false"
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}>

@@ -16,7 +16,7 @@ export default function CarouselBrands({ brands }: Props) {
 
   return (
     <>
-      <div class="flex justify-center overflow-auto lg:overflow-visible pb-5 lg:pb-0">
+      <div class="lg:flex justify-center overflow-auto lg:overflow-visible pb-5 lg:pb-0">
         <CarouselBrandsGroup brands={brands} />
       </div>
       <div id="dots" class="justify-center py-6 hidden lg:flex">

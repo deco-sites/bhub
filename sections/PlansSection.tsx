@@ -29,7 +29,7 @@ export default function PlansSection({
             <Plans listPlans={listPlans} />
           </div>
         )}
-        <p className="lg:w-3/5 mx-auto font-medium mb-10 mt-20">
+        <p className="lg:w-3/5 mx-auto font-medium mb-10 mt-20 text-white">
           {observation}
         </p>
       </div>

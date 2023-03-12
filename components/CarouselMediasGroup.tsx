@@ -3,7 +3,7 @@ import type { MediaItem } from "../components/CarouselMediaItem.tsx";
 import CarouselMediaItem from "./CarouselMediaItem.tsx";
 
 export const slidePage = signal(0);
-export const PAGE_SIZE = 5;
+export const PAGE_SIZE = 4;
 export function setSlidePage(slide: number) {
   slidePage.value = slide;
 }

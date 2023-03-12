@@ -12,7 +12,7 @@ export default function Navbar() {
         <div class="mx-auto max-w-7xl px-3 lg:px-2 bg-black">
           <div class="flex items-center justify-between py-3 lg:py-5">
             <div class="flex justify-start">
-              <a href="#" className="w-[120px]">
+              <a href="/" className="w-[120px]">
                 <Logo />
               </a>
             </div>
@@ -72,7 +72,7 @@ export default function Navbar() {
             <div class="hidden items-center justify-end md:flex">
               <a
                 href="#"
-                class="ml-10 inline-flex items-center justify-center whitespace-nowrap rounded-[10px] border border-transparent bg-primary px-3 py-2 text-base font-bold text-white shadow-sm hover:bg-indigo-700">
+                class="ml-10 inline-flex items-center justify-center whitespace-nowrap rounded-[10px] border border-transparent bg-primary px-3 py-2 text-base font-bold text-white shadow-sm hover:bg-secondaryDark transition-all">
                 Falar com especialista
               </a>
             </div>
@@ -91,7 +91,7 @@ export default function Navbar() {
                 ))}
                 <a
                   href="#"
-                  class="inline-flex items-center justify-center whitespace-nowrap rounded-[10px] border border-transparent bg-primary px-3 py-2 text-base font-bold text-white shadow-sm hover:bg-indigo-700">
+                  class="inline-flex items-center justify-center whitespace-nowrap rounded-[10px] border border-transparent bg-primary px-3 py-2 text-base font-bold text-white shadow-sm hover:bg-secondaryDark transition-all">
                   Falar com especialista
                 </a>
               </div>

@@ -22,7 +22,7 @@ export default function Testimony({
 }: Testimony) {
   return (
     <div
-      class={`max-w-[335px] sm:max-w-max sm:w-full min-h-[366px] sm:min-h-[540px] flex flex-col sm:flex-row relative bg-primary rounded-[32px] p-5 sm:pt-16 sm:px-12 sm:pb-12 flex-shrink-0 ${className}`}>
+      class={`max-w-[335px] sm:max-w-max sm:w-full min-h-[366px] sm:min-h-[540px] flex flex-col sm:flex-row relative bg-smoke border-1 border-white rounded-[32px] p-5 sm:pt-16 sm:px-12 sm:pb-12 flex-shrink-0 ${className}`}>
       <div className="flex sm:flex-col sm:justify-center items-center sm:items-start mb-6 sm:mb-0">
         <figure className="w-[60px] h-[60px] sm:w-[270px] sm:h-[270px] rounded-full mr-4 sm:mr-8">
           <Image

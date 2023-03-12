@@ -14,6 +14,5 @@ export { default as Solutions } from "./Solutions.tsx";
 export { default as Stats } from "./Stats.tsx";
 export { default as StatsItem } from "./StatsItem.tsx";
 export { default as Testimony } from "./Testimony.tsx";
-export { default as TopBar } from "./TopBar.tsx";
 export { default as WorkItem } from "./WorkItem.tsx";
 export { default as Works } from "./Works.tsx";

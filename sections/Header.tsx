@@ -1,5 +1,5 @@
-import { TopBar } from "../components/index.ts";
 import Navbar from "../islands/Navbar.tsx";
+import TopBar from "../islands/TopBar.tsx";
 
 export default function Header() {
   return (

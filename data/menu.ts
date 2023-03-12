@@ -1,7 +1,7 @@
 export const menu = [
   {
     label: "Sobre nós",
-    link: "/#",
+    link: "/sobre-nos",
     items: [],
   },
   {

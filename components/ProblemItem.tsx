@@ -11,8 +11,8 @@ export interface Problem {
 export default function ProblemItem({ alt, src, title, description }: Problem) {
   return (
     <div
-      class={`w-full relative bg-smoke rounded-3xl flex-shrink-0 border-1 border-white`}>
-      <div className="min-h-[230px] py-24 px-20 text-center">
+      class={`w-full relative bg-smoke rounded-3xl flex-shrink-0 border-1 border-white flex items-center`}>
+      <div className="min-h-[230px] p-8 lg:py-24 lg:px-20 text-center">
         <h2 className="text-2xl font-bold mb-5 text-white">
           {title ||
             "Sua empresa cresceu rápido e sua contabilidade não acompanha?"}
