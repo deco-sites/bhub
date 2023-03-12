@@ -1,4 +1,5 @@
 import { SolutionFeatured, Solutions } from "../components/index.ts";
+import Layout from "../components/Layout.tsx";
 import type { ISolutionFeatured } from "../components/SolutionFeatured.tsx";
 import type { Solution } from "../components/SolutionItem.tsx";
 
@@ -15,7 +16,7 @@ export default function SolutionsSection({
 }: Props) {
   return (
     <div className="bg-black">
-      <div className="mx-auto max-w-7xl px-3 sm:px-2 py-12 sm:py-14">
+      <Layout className="px-3 sm:px-2 py-12 sm:py-14">
         <h2 className="text-white text-3xl text-center font-bold mb-10">
           {titleSolution}
         </h2>
@@ -25,7 +26,7 @@ export default function SolutionsSection({
             <Solutions listSolutions={listSolutions} />
           </div>
         )}
-      </div>
+      </Layout>
     </div>
   );
 }

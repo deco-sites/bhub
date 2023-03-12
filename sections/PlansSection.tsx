@@ -1,4 +1,5 @@
 import { Plans } from "../components/index.ts";
+import Layout from "../components/Layout.tsx";
 import type { Plan } from "../components/PlanItem.tsx";
 
 export interface Props {
@@ -16,7 +17,7 @@ export default function PlansSection({
 }: Props) {
   return (
     <div className="bg-black">
-      <div className="mx-auto max-w-7xl px-3 sm:px-2 py-12 sm:py-14 text-center">
+      <Layout className="px-3 sm:px-2 py-12 sm:py-14 text-center">
         <h2 className="text-3xl text-center font-bold mb-10 text-white">
           {title}
         </h2>
@@ -32,7 +33,7 @@ export default function PlansSection({
         <p className="lg:w-3/5 mx-auto font-medium mb-10 mt-20 text-white">
           {observation}
         </p>
-      </div>
+      </Layout>
     </div>
   );
 }

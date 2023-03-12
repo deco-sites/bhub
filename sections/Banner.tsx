@@ -1,6 +1,7 @@
 import Image from "$live/std/ui/components/Image.tsx";
 import type { Image as LiveImage } from "$live/std/ui/types/Image.ts";
 import { InputEmail } from "../components/index.ts";
+import Layout from "../components/Layout.tsx";
 
 export interface Props {
   title: string;
@@ -11,7 +12,7 @@ export interface Props {
 export default function Banner({ title, subtitle, imageBanner }: Props) {
   return (
     <div className="pt-48 sm:pt-32 pb-16">
-      <div className="mx-auto max-w-7xl">
+      <Layout>
         <div className="flex flex-col md:flex-row justify-end relative">
           <div className="flex flex-col justify-center lg:justify-start items-center lg:w-2/4 px-4 lg:pl-3 lg:pr-12 lg:absolute left-0 lg:top-48">
             <h2 className="text-[24px] leading-[28px] lg:text-[40px] lg:leading-[48px] font-black mb-5 text-center lg:text-left text-white">
@@ -46,7 +47,7 @@ export default function Banner({ title, subtitle, imageBanner }: Props) {
             />
           </div>
         </div>
-      </div>
+      </Layout>
     </div>
   );
 }

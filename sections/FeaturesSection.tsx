@@ -1,6 +1,7 @@
 import Image from "$live/std/ui/components/Image.tsx";
 import type { Image as LiveImage } from "$live/std/ui/types/Image.ts";
 import { InputEmail } from "../components/index.ts";
+import Layout from "../components/Layout.tsx";
 
 export interface Props {
   title: string;
@@ -15,7 +16,7 @@ export default function FeaturesSection({
 }: Props) {
   return (
     <div className="relative">
-      <div className="mx-auto max-w-7xl px-3 sm:px-2 py-12 sm:py-24">
+      <Layout className="px-3 sm:px-2 py-12 sm:py-24">
         <div className="grid sm:grid-cols-2">
           <div className="flex flex-col justify-start lg:pr-20">
             <h2 className="text-white text-[32px] leading-10 font-bold mb-10">
@@ -62,7 +63,7 @@ export default function FeaturesSection({
             </figure>
           </div>
         </div>
-      </div>
+      </Layout>
     </div>
   );
 }

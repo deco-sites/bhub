@@ -1,3 +1,4 @@
+import Layout from "../components/Layout.tsx";
 import UserCardItem, { UserCard } from "../components/UserCardItem.tsx";
 
 export interface Props {
@@ -8,7 +9,7 @@ export interface Props {
 
 export default function UsersCardSection({ title, subtitle, users }: Props) {
   return (
-    <div className="mx-auto max-w-7xl px-3 sm:px-2 pt-[200px] text-center">
+    <Layout className="px-3 sm:px-2 pt-[200px] text-center">
       <h2 className="text-4xl mb-5 font-bold text-white">{title}</h2>
       <p className="w-3/5 mx-auto text-xl font-medium mb-6 text-white">
         {subtitle}
@@ -20,6 +21,6 @@ export default function UsersCardSection({ title, subtitle, users }: Props) {
           ))}
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }

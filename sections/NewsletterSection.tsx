@@ -1,3 +1,5 @@
+import Layout from "../components/Layout.tsx";
+
 export interface Props {
   title: string;
   subtitle: string;
@@ -12,7 +14,7 @@ export default function StatsSection({
   buttonLabel,
 }: Props) {
   return (
-    <div className="mx-auto max-w-7xl px-3 sm:px-2 py-12 sm:pb-8 sm:pt-16">
+    <Layout className="px-3 sm:px-2 py-12 sm:pb-8 sm:pt-16">
       <div className="flex flex-col relative bg-smoke border-1 border-white rounded-3xl p-3.5 sm:px-16 sm:py-10 mx-0 sm:mx-5">
         <h2 className="text-lg sm:text-[40px] sm:leading-10 font-bold tracking-tighter text-white">
           {title}
@@ -51,6 +53,6 @@ export default function StatsSection({
           {buttonLabel}
         </button>
       </div>
-    </div>
+    </Layout>
   );
 }

@@ -24,13 +24,14 @@ import * as $$$5 from "./sections/Head.tsx";
 import * as $$$6 from "./sections/Header.tsx";
 import * as $$$7 from "./sections/Markdown.tsx";
 import * as $$$8 from "./sections/NewsletterSection.tsx";
-import * as $$$9 from "./sections/PlansSection.tsx";
-import * as $$$10 from "./sections/ProblemSection.tsx";
-import * as $$$11 from "./sections/SolutionsSection.tsx";
-import * as $$$12 from "./sections/StatsSection.tsx";
-import * as $$$13 from "./sections/TestimonialsSection.tsx";
-import * as $$$14 from "./sections/UsersCardSection.tsx";
-import * as $$$15 from "./sections/WorksSection.tsx";
+import * as $$$9 from "./sections/PartnersSection.tsx";
+import * as $$$10 from "./sections/PlansSection.tsx";
+import * as $$$11 from "./sections/ProblemSection.tsx";
+import * as $$$12 from "./sections/SolutionsSection.tsx";
+import * as $$$13 from "./sections/StatsSection.tsx";
+import * as $$$14 from "./sections/TestimonialsSection.tsx";
+import * as $$$15 from "./sections/UsersCardSection.tsx";
+import * as $$$16 from "./sections/WorksSection.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -59,13 +60,14 @@ const manifest: DecoManifest = {
     "./sections/Header.tsx": $$$6,
     "./sections/Markdown.tsx": $$$7,
     "./sections/NewsletterSection.tsx": $$$8,
-    "./sections/PlansSection.tsx": $$$9,
-    "./sections/ProblemSection.tsx": $$$10,
-    "./sections/SolutionsSection.tsx": $$$11,
-    "./sections/StatsSection.tsx": $$$12,
-    "./sections/TestimonialsSection.tsx": $$$13,
-    "./sections/UsersCardSection.tsx": $$$14,
-    "./sections/WorksSection.tsx": $$$15,
+    "./sections/PartnersSection.tsx": $$$9,
+    "./sections/PlansSection.tsx": $$$10,
+    "./sections/ProblemSection.tsx": $$$11,
+    "./sections/SolutionsSection.tsx": $$$12,
+    "./sections/StatsSection.tsx": $$$13,
+    "./sections/TestimonialsSection.tsx": $$$14,
+    "./sections/UsersCardSection.tsx": $$$15,
+    "./sections/WorksSection.tsx": $$$16,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -328,6 +330,23 @@ const manifest: DecoManifest = {
           "description",
           "buttonLabel",
         ],
+      },
+      "outputSchema": null,
+    },
+    "./sections/PartnersSection.tsx": {
+      "inputSchema": {
+        "title": " Partners Section",
+        "type": "object",
+        "properties": {
+          "itemsPerRow": {
+            "type": [
+              "number",
+              "null",
+            ],
+            "title": "Items Per Row",
+          },
+        },
+        "required": [],
       },
       "outputSchema": null,
     },
