@@ -22,16 +22,17 @@ import * as $$$3 from "./sections/FeaturesSection.tsx";
 import * as $$$4 from "./sections/Footer.tsx";
 import * as $$$5 from "./sections/Head.tsx";
 import * as $$$6 from "./sections/Header.tsx";
-import * as $$$7 from "./sections/Markdown.tsx";
-import * as $$$8 from "./sections/NewsletterSection.tsx";
-import * as $$$9 from "./sections/PartnersSection.tsx";
-import * as $$$10 from "./sections/PlansSection.tsx";
-import * as $$$11 from "./sections/ProblemSection.tsx";
-import * as $$$12 from "./sections/SolutionsSection.tsx";
-import * as $$$13 from "./sections/StatsSection.tsx";
-import * as $$$14 from "./sections/TestimonialsSection.tsx";
-import * as $$$15 from "./sections/UsersCardSection.tsx";
-import * as $$$16 from "./sections/WorksSection.tsx";
+import * as $$$7 from "./sections/ManifestSection.tsx";
+import * as $$$8 from "./sections/Markdown.tsx";
+import * as $$$9 from "./sections/NewsletterSection.tsx";
+import * as $$$10 from "./sections/PartnersSection.tsx";
+import * as $$$11 from "./sections/PlansSection.tsx";
+import * as $$$12 from "./sections/ProblemSection.tsx";
+import * as $$$13 from "./sections/SolutionsSection.tsx";
+import * as $$$14 from "./sections/StatsSection.tsx";
+import * as $$$15 from "./sections/TestimonialsSection.tsx";
+import * as $$$16 from "./sections/UsersCardSection.tsx";
+import * as $$$17 from "./sections/WorksSection.tsx";
 import * as $$$$0 from "./functions/LoadGitHubRaw.ts";
 
 const manifest: DecoManifest = {
@@ -58,16 +59,17 @@ const manifest: DecoManifest = {
     "./sections/Footer.tsx": $$$4,
     "./sections/Head.tsx": $$$5,
     "./sections/Header.tsx": $$$6,
-    "./sections/Markdown.tsx": $$$7,
-    "./sections/NewsletterSection.tsx": $$$8,
-    "./sections/PartnersSection.tsx": $$$9,
-    "./sections/PlansSection.tsx": $$$10,
-    "./sections/ProblemSection.tsx": $$$11,
-    "./sections/SolutionsSection.tsx": $$$12,
-    "./sections/StatsSection.tsx": $$$13,
-    "./sections/TestimonialsSection.tsx": $$$14,
-    "./sections/UsersCardSection.tsx": $$$15,
-    "./sections/WorksSection.tsx": $$$16,
+    "./sections/ManifestSection.tsx": $$$7,
+    "./sections/Markdown.tsx": $$$8,
+    "./sections/NewsletterSection.tsx": $$$9,
+    "./sections/PartnersSection.tsx": $$$10,
+    "./sections/PlansSection.tsx": $$$11,
+    "./sections/ProblemSection.tsx": $$$12,
+    "./sections/SolutionsSection.tsx": $$$13,
+    "./sections/StatsSection.tsx": $$$14,
+    "./sections/TestimonialsSection.tsx": $$$15,
+    "./sections/UsersCardSection.tsx": $$$16,
+    "./sections/WorksSection.tsx": $$$17,
   },
   functions: { "./functions/LoadGitHubRaw.ts": $$$$0 },
   schemas: {
@@ -282,6 +284,30 @@ const manifest: DecoManifest = {
     },
     "./sections/Header.tsx": {
       "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/ManifestSection.tsx": {
+      "inputSchema": {
+        "title": " Manifest Section",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": [
+              "string",
+              "null",
+            ],
+            "title": "Title",
+          },
+          "link": {
+            "type": [
+              "string",
+              "null",
+            ],
+            "title": "Link",
+          },
+        },
+        "required": [],
+      },
       "outputSchema": null,
     },
     "./sections/Markdown.tsx": {

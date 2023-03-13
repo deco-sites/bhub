@@ -20,18 +20,7 @@ export default function PartnersSection({ itemsPerRow = 3 }: Props) {
             alt=""
           />
         </div>
-        <h2 className="text-3xl text-white font-bold text-center mb-12 mt-24">
-          Manifesto BHub
-        </h2>
       </div>
-      <Layout>
-        <iframe
-          class="w-full aspect-16/10 rounded-[20px] bg-red-800"
-          src="https://www.youtube.com/embed/R27cIN1TUPA"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope;"
-          allowFullScreen></iframe>
-      </Layout>
     </section>
   );
 }
